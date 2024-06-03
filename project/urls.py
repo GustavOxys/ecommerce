@@ -25,7 +25,7 @@ urlpatterns = [
     path('profile/', include('profiles.urls')),
     path('order/', include('order.urls')),
     path('admin/', admin.site.urls),
-] + static(settings.MEDIA_URL, document__root=settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 if settings.DEBUG:
     import debug_toolbar
