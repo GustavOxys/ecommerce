@@ -26,11 +26,11 @@ class Product(models.Model):
     )
 
     def get_price_formated(self):
-        return utils.formate_price(self.price_marketing)
+        return utils.format_price(self.price_marketing)
     get_price_formated.short_description = 'Price'
 
     def get_price_promotional_formated(self):
-        return utils.formate_price(self.price_marketing_promotional)
+        return utils.format_price(self.price_marketing_promotional)
     
     get_price_promotional_formated.short_description = 'Price Promo'
 
